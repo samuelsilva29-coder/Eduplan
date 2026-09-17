@@ -143,3 +143,63 @@ body {
 .btn-cadastrar:hover {
     background-color: var(--verde-escuro);
 }
+
+/* MENU HAMBURGUER */ 
+.hamburguer {
+    display: none; /* ocultando botão menu em telas grandes */
+    font-size: 24px;
+    background: none; /* remove a cor padrao do botao menu */
+    border: none; /* remove a borda do menu */
+    cursor: pointer;
+}
+
+/* A duplicata dos botões some para telas grandes, só aparece em telas menores (mobile) */
+.nav-actions {
+    display: none;
+ }
+
+@media (max-width: 768px) { /*para telas menores que 768px, a responsividade se aplica */
+    .hamburguer {
+        display: block;
+    }
+
+    .actions {
+        display:none
+        /* Os botoes originais do header somem no mobile, porque
+        agora eles moram dentro do menu */
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+
+        position: absolute; /*ele assume as propriedades da posição que foram passadas abaixo */
+        top: 100%;
+        left: 0; /*0 para a esquerda */
+        right: 0; /* 0 zero para a direita */
+        background: var(--cor-fundo);
+        border-bottom: 1px solid var(--cor-borda); /*borda a baixo */
+        padding: 16px 24px;
+        gap: 16px;
+    }
+
+    /* Classe que o JavaScript vai adicionar/remover para mostrar o menu */
+    .nav.ativo {
+        display: flex;
+    }
+
+    .nav-actions {
+        display: flex;
+        gap: 12px;
+        margin-top: 8px;
+        border-top: 1px solid var(--cor-borda);
+        padding-top: 16px;
+        width: 100%;
+    }
+
+    .nav-actions .btn {
+        flex: 1;
+        /* Os dois botões dividem a largura igualmente */
+    }
+}
