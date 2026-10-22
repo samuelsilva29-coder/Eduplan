@@ -7,6 +7,10 @@
     <title>Eduplan</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!--  biblioteca de ícones do Google (Material Symbols) -->
+    <!-- Para usar um ícone, bsta escrever o NOME dentro de um <span> -->
+    <!-- <span class="material-symbols-outlined">home</span> -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"
 </head>
 <body>
     <!-- <header> é uma tag semãntica: ela existe especificamente para 
@@ -60,6 +64,39 @@
         </div>
 
     </header>
+
+    <!-- hero -->
+     <!-- "Hero" é o nome da primeirta seção do site, a "vitrine". 
+      <main> marca o conteúdo principal da página (as próximas seções também vão aqui dentro)-->
+        <main>
+            <!-- Section são seções do projeto -->
+            <section class="hero" id="inicio">
+                    <!-- Mesmo "envelope" do header: limita a largura e organiza as duas colunas -->
+                    <div class="hero-inner"></div>
+                      <!-- COLUNA DA ESQUERDA: Textos e Botões -->
+                       <div class="hero-texto">
+                        <span class="hero-etiqueta">Plataforma para professores</span>
+                       </div>
+
+                    <!-- O texto está escrito normal. Quem deixa em MAIUSCULA é o CSS (Text-Transform) O span permite pintar só a palavra "Inteligente" de azul -->
+                       <h1 class="hero-titulo">
+                        Planejamento pedagógico <span>inteligente</span>
+                       </h1>
+
+                       <p class="hero-descricao">
+                        Organize planos de aula, acompanhe turmas e centralize sua rotina acadêmica em um só lugar.
+                       </p>
+
+                       <div class="hero-botoes">
+                        <a href="#" class="btn btn-primario btn-grande">Começar agora</a>
+                        <a href="#" class="btn btn-contorno btn-grande">
+                            <span class="material-symbols-outlined">play_arrow</span>
+                            Ver recursos
+                        </a>
+                       </div>
+                </div>
+            </section>
+        </main>
 
     <script src="script.js"></script>
 </body>
