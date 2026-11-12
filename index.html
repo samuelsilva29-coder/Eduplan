@@ -66,19 +66,23 @@
     </header>
 
     <!-- hero -->
+
      <!-- "Hero" é o nome da primeirta seção do site, a "vitrine". 
       <main> marca o conteúdo principal da página (as próximas seções também vão aqui dentro)-->
         <main>
+
             <!-- Section são seções do projeto -->
+
             <section class="hero" id="inicio">
-                    <!-- Mesmo "envelope" do header: limita a largura e organiza as duas colunas -->
-                    <div class="hero-inner"></div>
-                      <!-- COLUNA DA ESQUERDA: Textos e Botões -->
+            <!-- Mesmo "envelope" do header: limita a largura e organiza as duas colunas -->
+            <div class="hero-inner">
+
+                       <!-- COLUNA DA ESQUERDA: Textos e Botões -->
                        <div class="hero-texto">
                         <span class="hero-etiqueta">Plataforma para professores</span>
                        </div>
 
-                    <!-- O texto está escrito normal. Quem deixa em MAIUSCULA é o CSS (Text-Transform) O span permite pintar só a palavra "Inteligente" de azul -->
+                        <!-- O texto está escrito normal. Quem deixa em MAIUSCULA é o CSS (Text-Transform) O span permite pintar só a palavra "Inteligente" de azul -->
                        <h1 class="hero-titulo">
                         Planejamento pedagógico <span>inteligente</span>
                        </h1>
@@ -88,14 +92,84 @@
                        </p>
 
                        <div class="hero-botoes">
-                        <a href="#" class="btn btn-primario btn-grande">Começar agora</a>
-                        <a href="#" class="btn btn-contorno btn-grande">
+                            <a href="#" class="btn btn-primario btn-grande">Começar agora</a>
+                            <a href="#" class="btn btn-contorno btn-grande">
                             <span class="material-symbols-outlined">play_arrow</span>
                             Ver recursos
-                        </a>
-                       </div>
+                            </a>
+                        </div>
+
+                        <!-- FAixa com as 3 vantagens -->
+                        <ul class="hero-vantagens">
+                            <li>
+                                <span class="material-symbols-outlined">verified_user</span>
+                                <p><strong>Seguro</strong> Seus dados protegidos</p>
+                            </li>
+
+                            <li>
+                                <span class="material-symbols-outlined">cloud</span>
+                                <p>Acesso em qualquer lugar</p>
+                            </li>
+
+                            <li>
+                                <span class="material-symbols-outlined">schedule</span>
+                                <p>Economize tempo</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+                <img 
+                    src="./assets/dashboard.png" 
+                    alt="Tela do Dashboard do Eduplan"
+                    class="hero-imagem"
+                >
+            </div>
+
+            </section>
+
+
+            <!-- FUNCIONALIDADES (recursos) -->
+            <!-- cada cartão é um requisito funcional (RF) da documentação -->
+            <section class="secao" id="funcionalidades">
+                <div class="container">
+                    <h2 class="secao-titulo">funcionalidades</h2>
+
+                    <!-- A grade (GRID) que organiza os 5 cartões -->
+                    <div class="cards">
+                        <article class="card">
+                            <span class="material-symbols-outlined card-icone">description</span>
+                            <h3>Planos de aula </h3>
+                            <p>Crie, edite, deplique e exporte seus planos em PDF ou DOCX de forma rápida</p>
+                        </article>
+
+                        <article class="card">
+                            <span class="material-symbols-outlined card-icone">calendar_month</span>
+                            <h3>Calendário acadêmico</h3>
+                            <p>Visualize prazos, provas, eventos e feriados em um calendário</p>
+                        </article>
+
+                        <article class="card">
+                            <span class="material-symbols-outlined card-icone">groups</span>
+                            <h3>Planos de aula </h3>
+                            <p>Registre frequência e notas de alunos por turma de maneira simples e eficiente</p>
+                        </article>
+
+                        <article class="card">
+                            <span class="material-symbols-outlined card-icone">folder_open</span>
+                            <h3>Banco de atividades</h3>
+                            <p>Armazena exercicios, textos, mídias e documentos no seu repositório pessoal</p>
+                        </article>
+
+                        <article class="card">
+                            <span class="material-symbols-outlined card-icone">track_changes</span>
+                            <h3>Integração BNCC</h3>
+                            <p>Busque competências e habilidades automaticamente para seus planos de aula</p>
+
+                        </article>
+                    </div>
                 </div>
             </section>
+
         </main>
 
     <script src="script.js"></script>
